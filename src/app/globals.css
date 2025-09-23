@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
+/* ========================
+   🎨 Tokens globales
+   ======================== */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-neutreal-900: #02012C;
+  --color-neutreal-800: #262540;
+  --color-neutreal-700: #302f4a;
+  --color-neutreal-600: #3c3b5e;
+  --color-neutreal-300: #acacb7;
+  --color-neutreal-200: #d4d3d9;
+  --color-neutreal-0: #ffffff;
+  --color-orange-500: #ff820a;
+  --color-blue-500: #4658d9;
+  --color-blue-700: #2b1b9c;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ========================
+   📏 Spacing (padding / margin)
+   ======================== */
+.p-100 { padding: 8px; }
+.p-200 { padding: 16px; }
+.p-300 { padding: 24px; }
+.p-400 { padding: 32px; }
+.p-500 { padding: 40px; }
+.p-600 { padding: 48px; }
+.p-800 { padding: 64px; }
+.p-1000 { padding: 80px; }
+
+.m-100 { margin: 8px; }
+.m-200 { margin: 16px; }
+.m-300 { margin: 24px; }
+.m-400 { margin: 32px; }
+.m-500 { margin: 40px; }
+.m-600 { margin: 48px; }
+.m-800 { margin: 64px; }
+.m-1000 { margin: 80px; }
+
+/* ========================
+   ⭕ Radius
+   ======================== */
+.radius-0 { border-radius: 0; }
+.radius-4 { border-radius: 4px; }
+.radius-6 { border-radius: 6px; }
+.radius-8 { border-radius: 8px; }
+.radius-10 { border-radius: 10px; }
+.radius-12 { border-radius: 12px; }
+.radius-16 { border-radius: 16px; }
+.radius-20 { border-radius: 20px; }
+.radius-24 { border-radius: 24px; }
+.radius-full { border-radius: 999px; }
+
+/* ========================
+   🔤 Presets tipográficos
+   ======================== */
+.text-preset1 {
+  font-family: var(--font-dm-sans);
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  font-style: italic;
+  font-weight: 500;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.text-preset2 {
+  font-family: var(--font-bricolage);
+  font-size: 52px;
+  line-height: 120%;
+  font-weight: 700;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.text-preset3 {
+  font-family: var(--font-dm-sans);
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 300;
+}
+
+.text-preset4 {
+  font-family: var(--font-dm-sans);
+  font-size: 28px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.text-preset5 {
+  font-family: var(--font-dm-sans);
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.text-preset5-medium {
+  font-family: var(--font-dm-sans);
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.text-preset6 {
+  font-family: var(--font-dm-sans);
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.text-preset7 {
+  font-family: var(--font-dm-sans);
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.text-preset8 {
+  font-family: var(--font-dm-sans);
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
 }
