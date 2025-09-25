@@ -14,8 +14,11 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata = {
-  title: "Test Fuentes",
-  description: "Ver presets tipográficos",
+  title: "Weather App",
+  description: "web application for viewing weather information",
+   icons: {
+    icon: "/images/favicon-32x32.png", 
+  },
 };
 
 export default function RootLayout({
